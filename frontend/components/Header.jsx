@@ -24,9 +24,13 @@ export default function Header() {
 
         <Link
           href="/"
-          className="hidden md:block  absolute top-0 left-0 scale-0 md:top-1/2 md:-translate-y-1/2 md:left-1/2 md:-translate-x-1/2 md:scale-100 xl:scale-0 transition-all duration-200"
+          className="hidden md:block  absolute top-0 left-0 scale-0 md:top-1/2 md:-translate-y-1/2 md:left-1/2 md:-translate-x-1/2 md:scale-100 xl:scale-0 transition-all duration-200 hover:bg-gray-100 p-3 rounded-full"
         >
-          <AiOutlineInstagram size={30} alt="instagram_logo" />
+          <AiOutlineInstagram
+            size={30}
+            alt="instagram_logo"
+            className="hover:scale-110"
+          />
         </Link>
         <div className="md:hidden">
           <SearchBar />
