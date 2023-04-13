@@ -1,11 +1,36 @@
 'use client';
+import React, { useEffect, useState } from 'react';
+import Story from './Story';
+import { faker } from '@faker-js/faker/locale/en_GB';
 
-import React, { useState } from 'react';
-import { faker } from '@faker-js/faker/locale/tr';
-
-const Stories = () => {
+function Stories() {
   const [storyUsers, setStoryUsers] = useState([]);
-  return <div>Stories</div>;
-};
+
+  useEffect(() => {
+    for (let i = 0; i < 20; i++) {
+      let user = {
+        userId: faker.datatype.uuid(),
+        username: faker.internet.userName(),
+        avatar: faker.image.avatar(),
+      };
+      storyUsers.push(user);
+    }
+
+    setStoryUsers(storyUsers);
+    console.log(storyUsers);
+  }, []);
+
+  return (
+    <div className="flex w-full overflow-x-scroll">
+      {storyUsers.map((user) => (
+        <Story
+          key={user.userId}
+          username={user.username}
+          avatar={user.avatar}
+        />
+      ))}
+    </div>
+  );
+}
 
 export default Stories;

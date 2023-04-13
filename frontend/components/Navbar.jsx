@@ -29,7 +29,7 @@ export default function Navbar() {
           <HiOutlineUser size={30} />
           <p className="hidden xl:block">Profile</p>
         </div>
-        <div className="p-2 cursor-pointer hover:bg-gray-100 rounded-full flex gap-x-4 items-center md:mt-auto hover:scale-110 xl:hover:scale-100">
+        <div className="p-2 cursor-pointer hover:bg-gray-100 rounded-full flex gap-x-4 items-center mt-auto hover:scale-110 xl:hover:scale-100">
           <HiOutlineMenu size={30} />
           <p className="hidden xl:block">More</p>
         </div>
