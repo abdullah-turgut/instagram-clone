@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 export default function SearchBar() {
   return (
-    <div className="relative flex -left-6">
+    <div className="relative flex -left-3">
       <div className="flex h-full items-center absolute left-3">
         <MagnifyingGlassIcon className="h-1/2 text-gray-500" />
       </div>
