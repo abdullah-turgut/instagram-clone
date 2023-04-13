@@ -1,13 +1,17 @@
-import Header from '@/components/Header';
-
+import Stories from '@/components/Stories';
+import Posts from '@/components/Posts';
+import MiniProfile from '@/components/MiniProfile';
+import Suggestions from '@/components/Suggestions';
 export default function Home() {
   return (
     <main className="flex flex-grow justify-center pt-8">
       <section className="flex flex-col flex-grow max-w-[630px] border border-gray-700">
-        as
+        <Stories />
+        <Posts />
       </section>
       <section className="hidden lg:flex flex-col w-[320px] border border-gray-700">
-        asdas
+        <MiniProfile />
+        <Suggestions />
       </section>
     </main>
   );
