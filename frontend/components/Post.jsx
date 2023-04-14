@@ -18,11 +18,13 @@ function Post({ username, avatar, img, caption }) {
             <img
               src={avatar}
               alt="post-avatar"
-              className="w-full rounded-full border-2 border-white"
+              className="w-full rounded-full border-2 border-white cursor-pointer"
             />
           </div>
           <div className="flex items-center">
-            <p>{username}</p>
+            <p className="cursor-pointer font-semibold hover:text-gray-400">
+              {username}
+            </p>
             <BsDot size={14} />
             <p className="text-gray-500">5h</p>
           </div>
