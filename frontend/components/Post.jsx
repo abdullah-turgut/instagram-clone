@@ -68,7 +68,7 @@ function Post({ username, avatar, img, caption }) {
       <p className="text-sm mt-1 text-gray-500 cursor-pointer hover:underline">
         View all 12 Comments
       </p>
-      <form className="w-full mt-1 flex items-center justify-between gap-x-2 relative">
+      <form className="hidden md:flex w-full mt-1 items-center justify-between gap-x-2 relative">
         <textarea
           name=""
           id=""
