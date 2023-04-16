@@ -9,7 +9,7 @@ export default function Home() {
         <Stories />
         <Posts />
       </section>
-      <section className="hidden lg:flex w-full flex-col max-w-[320px] border border-gray-700">
+      <section className="hidden lg:flex w-full flex-col max-w-[320px]">
         <MiniProfile />
         <Suggestions />
       </section>
