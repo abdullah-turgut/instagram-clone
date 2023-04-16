@@ -14,7 +14,7 @@ export default function MiniProfile() {
           <p className="text-gray-500">Abdullah Turgut</p>
         </div>
       </div>
-      <button className="text-sm font-semibold px-2 text-sky-400">
+      <button className="text-xs font-semibold px-2 text-sky-400">
         Switch
       </button>
     </div>
