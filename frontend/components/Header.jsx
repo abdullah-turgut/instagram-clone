@@ -9,7 +9,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 export default function Header() {
   return (
     <div className="flex flex-col gap-y-4 md:fixed bg-white md:pt-2 md:px-3 md:h-screen md:border-r md:border-gray-300">
-      <div className="flex bg-white items-center justify-between fixed px-4 md:p-0 h-[60px] w-screen top-0 border-b border-gray-300 md:relative md:flex-col md:w-auto md:h-[92px]  md:justify-center md:items-center md:border-none xl:w-[220px]">
+      <div className="flex bg-white items-center justify-between fixed px-4 md:p-0 h-[60px] w-screen top-0 border-b border-gray-300 md:relative md:flex-col md:w-auto md:h-[92px]  md:justify-center md:items-center md:border-none xl:w-[220px] min-[1920px]:w-[310px]">
         <Link
           href="/"
           className="top-0 left-0 scale-100 md:absolute md:top-1/2 md:-translate-y-1/2 md:scale-0 xl:scale-100 transition-all duration-200 xl:px-2"
